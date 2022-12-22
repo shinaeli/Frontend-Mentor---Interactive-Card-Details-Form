@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;         
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+}
+
+main {
+    position: relative;
+    width: 95%;
+    height: 90vh;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.colors {
+    width: 25%;
+    background-image: url("images/bg-main-desktop.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+.form-section {
+    width: 70%;
+    padding: 50px;
+}
+
+form {
+    width: 400px;
+    margin: 10px auto;
+    padding: 20px;
+    display: block;
+}
+
+form div {
+    margin: 20px 0;
+}
+
+label {
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 10px 0;
+    padding: 10px 0;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: solid 1px;
+    margin: 10px 0;
+}
+
+.center-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.center-flex-start {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.expiry {
+    width: 50%;
+    margin: 0px;
+}
+
+.cvc {
+    width: 45%;
+    margin: 0px;
+}
+
+.fillers {
+    width: 35%;
+    margin: 0 auto;
+}
+
+.fillers input {
+    margin: 0 auto;
+}
+
+.fillers-containers {
+    margin: 0px;
+}
+
+.fillers-containers > div {
+    margin-left: 0;
+}
+
+button, .head-home {
+    display: block;
+    width: 100%;
+    margin: 30px 0;
+    padding: 20px;
+    color: #fff;
+    background-color: hsl(278, 68%, 11%);
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.card1 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 400px;
+    height: 200px;
+    background-image: url('images/bg-card-front.png');
+    background-size: cover;
+    border-radius: 10px;
+    padding: 75px 15px 15px 15px;
+}
+
+.card1 h3 {
+    display: inline-block;
+}
+
+.card-num {
+    margin: 20px 0;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 300;
+    text-align: left;
+}
+
+.user-name {
+    width: 70%;
+    margin-right: 18px;
+    color: #fff;
+    font-weight: 300;
+    text-align: left;
+}
+
+.month-year {
+    width: 20%;
+    margin-right: 0px;
+    color: #fff;
+    font-weight: 300;
+    text-align: right;
+}
+
+.card2 {
+    position: absolute;
+    top: 320px;
+    left: 100px;
+    width: 400px;
+    height: 200px;
+    background-image: url('images/bg-card-back.png');
+    background-size: cover;
+    border-radius: 10px;
+    padding-top: 110px;
+}
+
+.card2 h3 {
+    margin-left: 80%;
+    width: 10%;
+    color: #fff;
+    margin-top: -10px;
+}
+
+input.valid {
+    border-color: blue;
+}
+
+input + p {
+    margin: 10px 0;
+    color: red;
+    height: 0;
+    display: none;
+}
+
+input.invalid + p {
+    font-size: 0.65rem;
+    height: auto;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.farewell {
+    width: 40%;
+    margin: 10px auto;
+    padding: 20px;
+    display: none;
+}
+
+.mark-logo {
+    width: 50%;
+    margin: 20px auto;
+    /* Used 'text-align: center to center an inline element like span or text residing in a block=level element */
+    text-align: center;
+}
+
+.card-logo {
+    margin-top: -50px;
+}
+
+.farewell h1 {
+    width: 80%;
+    padding: 5%;
+    margin: 10% auto;
+    text-align: center;
+}
+
+.farewell p {
+    margin: 10px 0;
+    font-weight: 300;
+    text-align: center;
+}
+
+.active {
+    display: block;
+}
+
+.disabled {
+    display: none;
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+    body {
+        font-size: 10px;
+        overflow-x: hidden;
+    }
+
+    main {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+    .colors {
+        width: 100%;
+        height: 30vh;
+    }
+
+    .form-section {
+        width: 100%;
+        padding: 0px;
+    }
+
+    form {
+        width: 90vw;
+        margin-top: 50px;
+    }
+
+    form div {
+        margin: 5px auto;
+    }
+
+    button {
+        margin: 5px auto;
+    }
+
+    .card-logo {
+        margin-top: -30px;
+    }
+
+    .card1 {
+        width: 300px;
+        height: 150px;
+        top: 120px;
+        left: 20px;
+        padding: 40px 10px 10px 10px;
+        z-index: 10;
+    }
+
+    .card2 {
+        width: 300px;
+        height: 150px;
+        top: 30px;
+        left: 80px;
+    }
+
+    .card2 h3 {
+        margin-top: -38px;
+    }
+
+    .card-num {
+        font-size: 20px;
+    }
+    
+    .user-name, .month-year, button, .head-home {
+        font-size: 15px;
+    }
+
+    .farewell {
+        width: 70%;
+        margin: 45px auto;
+    }
+
+    .farewell p {
+        font-size: 14px;
+    }
+}
+
+
+
