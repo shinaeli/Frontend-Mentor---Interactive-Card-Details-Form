@@ -1,4 +1,3 @@
-console.log('Hello!');
 const patterns = {
     cardName: /^([a-z]+\s){1}[a-z]+$/i,
     cardNum: /^([0-9]{4}\s{1}){3}[0-9]{4}$/,
@@ -44,18 +43,10 @@ formEl.addEventListener('submit', function(event) {
     }
     
     console.log(validOutcomes);
-
-   
 })
 
 function checkRegex(sample, regex) {
     return regex.test(sample);
 }
-
-// const regex = /^([a-z]+\s){1}[a-z]+$/i;
-// let pin = 'Omotosho Oluwasina';
-// let pin2 = 'Akanbi James202';
-// console.log(regex.test(pin));
-// console.log(regex.test(pin2));
 
 
